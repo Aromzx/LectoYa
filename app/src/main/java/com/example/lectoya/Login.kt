@@ -17,5 +17,13 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val button2 = findViewById<Button>(R.id.btnIniciarSesion)
+
+        button2.setOnClickListener {
+            val intent = Intent(this, AlumnoAula::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
