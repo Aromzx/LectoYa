@@ -1,15 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="25dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
     tools:context=".fragmentsAlumnoAula.perfilFragment">
 
     <TextView
+        android:id="@+id/tvDatosPersonales"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hola"
-        android:layout_centerInParent="true"
-        />
+        android:paddingBottom="20dp"
+        android:text="DATOS PERSONALES"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/ivImagenUsuario"
+        android:layout_width="210dp"
+        android:layout_height="120dp"
+        android:background="@drawable/usuario"
+        android:paddingTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDatosPersonales" />
+
+    <TextView
+        android:id="@+id/tvNombresEstudiante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="NOMBRES: "
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImagenUsuario" />
+
+    <EditText
+        android:id="@+id/etNombresEstudiante"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:hint="Nombres del estudiante"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombresEstudiante" />
+
+    <TextView
+        android:id="@+id/tvApellidosEstudiante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="APELLIDOS: "
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombresEstudiante" />
+
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:hint="Apellidos del estudiante"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellidosEstudiante" />
+
+    <TextView
+        android:id="@+id/tvCorreoEstudiante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="CORREO: "
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etApellidos" />
+
+    <EditText
+        android:id="@+id/etCorreoEstudiante"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:hint="Correo del estudiante"
+        android:paddingStart="35dp"
+        android:paddingEnd="20dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCorreoEstudiante" />
+
+    <View
+        android:id="@+id/viewBajoCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/etCorreoEstudiante"/>
+
+    <TextView
+        android:id="@+id/tvTipoDeLector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:text="TIPO DE LECTOR: "
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewBajoCorreo" />
+
+    <Spinner
+        android:id="@+id/spTipoDeLector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTipoDeLector" />
+
+    <View
+        android:id="@+id/viewBajoSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/spTipoDeLector"/>
+
+    <Button
+        android:id="@+id/btnAceptarEstudiante"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="Aceptar"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewBajoSpinner" />
+
+    <Button
+        android:id="@+id/btnTipLectura"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="Tip de Lectura"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewBajoSpinner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
