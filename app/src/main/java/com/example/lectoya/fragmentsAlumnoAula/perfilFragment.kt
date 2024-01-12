@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Adapter
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.EditText
 import android.widget.Spinner
 import android.widget.Toast
 import com.example.lectoya.R
@@ -24,6 +25,17 @@ class perfilFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val editTexts: List<EditText> = listOf(
+            view.findViewById(R.id.etNombresEstudiante),
+            view.findViewById(R.id.etApellidos),
+            view.findViewById(R.id.etCorreoEstudiante)
+        )
+
+        for (editText in editTexts) {
+            editText.isEnabled = false
+        }
+
 
         val spinner: Spinner = view.findViewById(R.id.spTipoDeLector)
 
