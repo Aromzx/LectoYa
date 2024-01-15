@@ -17,14 +17,14 @@
             android:text="Aulas" />
 
         <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Estudiantes" />
+            android:text="Alumnos" />
 
         <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Minijuegos" />
+            android:text="Juegos" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
