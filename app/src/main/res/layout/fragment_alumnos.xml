@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentsDocenteAula.estudiantesFragment">
+    tools:context=".fragmentsDocenteAula.alumnosFragment">
 
     <Button
         android:id="@+id/btnIngresarcalificaciones"
@@ -42,7 +42,7 @@
         android:id="@+id/tvListadodeaulas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Estudiantes:"
+        android:text="Alumnos:"
         android:textColor="@color/black"
         android:textSize="19dp"
         android:textStyle="bold"
@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintVertical_bias="0.09"
         app:layout_constraintHorizontal_bias="0.25"
         />
 

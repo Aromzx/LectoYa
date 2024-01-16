@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import com.example.lectoya.R
 
 class perfilDocenteFragment : Fragment() {
@@ -18,4 +19,17 @@ class perfilDocenteFragment : Fragment() {
     }
 
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val editTexts: List<EditText> = listOf(
+            view.findViewById(R.id.etNombresDocente),
+            view.findViewById(R.id.etApellidosDocente),
+            view.findViewById(R.id.etCorreoDocente)
+        )
+
+        for (editText in editTexts) {
+            editText.isEnabled = false
+        }
+    }
 }
