@@ -24,9 +24,9 @@
 
     <ImageView
         android:id="@+id/ivImagenUsuario"
-        android:layout_width="210dp"
-        android:layout_height="120dp"
-        android:background="@drawable/usuario"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/fotoperfil"
         android:paddingTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

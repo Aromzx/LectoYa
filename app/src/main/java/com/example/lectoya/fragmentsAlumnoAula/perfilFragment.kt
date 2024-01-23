@@ -33,7 +33,7 @@ class perfilFragment : Fragment() {
         )
 
         for (editText in editTexts) {
-            editText.isEnabled = false
+            editText.isFocusable = false
         }
 
 
