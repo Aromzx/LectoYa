@@ -17,33 +17,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58"/>
-
-    <LinearLayout
-        android:id="@+id/llaulas"
-        android:layout_width="350dp"
-        android:layout_height="300dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cvAulas"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_margin="15dp"
-            app:cardBackgroundColor="#E3E3E3"
-            app:cardCornerRadius="20dp" />
-
-    </LinearLayout>
+        app:layout_constraintVertical_bias="0.95"/>
 
     <TextView
         android:id="@+id/tvListadodeaulas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Listado de aulas:"
+        android:text="Listado de aulas"
         android:textColor="@color/black"
         android:textSize="19dp"
         android:textStyle="bold"
@@ -51,74 +31,51 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintVertical_bias="0.05"
         app:layout_constraintHorizontal_bias="0.25"
         />
 
-    <CheckBox
-        android:id="@+id/cb2a"
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2° A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"
-        app:layout_constraintHorizontal_bias="0.17"
-        />
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintVertical_bias="0.2">
 
-    <CheckBox
-        android:id="@+id/cb2b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2° B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
-        app:layout_constraintHorizontal_bias="0.17"
-        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2do A"
+            android:paddingEnd="25dp"/>
 
-    <CheckBox
-        android:id="@+id/cb2c"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2° C"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.30"
-        app:layout_constraintHorizontal_bias="0.17"
-        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2do B"
+            android:paddingEnd="25dp"/>
 
-    <CheckBox
-        android:id="@+id/cb2d"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2° D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"
-        app:layout_constraintHorizontal_bias="0.17"
-        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2do C"
+            android:paddingEnd="25dp"/>
 
-    <CheckBox
-        android:id="@+id/cb2e"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2° E"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40"
-        app:layout_constraintHorizontal_bias="0.17"
-        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2do D"
+            android:paddingEnd="25dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2do E"
+            android:paddingEnd="25dp"/>
+
+    </RadioGroup>
 
 
 

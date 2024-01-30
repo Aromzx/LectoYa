@@ -18,31 +18,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95"/>
 
-    <LinearLayout
-        android:id="@+id/llaulas"
-        android:layout_width="350dp"
-        android:layout_height="550dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cvAulas"
-            android:layout_width="match_parent"
-            android:layout_height="530dp"
-            android:layout_margin="15dp"
-            app:cardBackgroundColor="#D1D1D1"
-            app:cardCornerRadius="20dp" />
-
-    </LinearLayout>
-
     <TextView
         android:id="@+id/tvListadodeaulas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alumnos:"
+        android:text="Alumnos"
         android:textColor="@color/black"
         android:textSize="19dp"
         android:textStyle="bold"
@@ -50,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintVertical_bias="0.05"
         app:layout_constraintHorizontal_bias="0.25"
         />
 

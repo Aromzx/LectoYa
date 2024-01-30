@@ -42,13 +42,14 @@
         android:paddingEnd="20dp"
         android:textSize="14dp"
         android:textAlignment="center"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="0.4"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -74,7 +75,7 @@
         android:paddingEnd="20dp"
         android:textSize="14dp"
         android:textAlignment="center"
-        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_bias="0.5"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,6 +147,7 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
+
     <Button
         android:id="@+id/btnTipLectura"
         android:layout_width="280dp"
@@ -160,6 +162,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/btnCerrarSesionAlumno"
         android:layout_width="280dp"
         android:layout_height="70dp"
         android:text="Cerrar Sesion"

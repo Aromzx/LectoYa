@@ -8,10 +8,13 @@ import android.view.ViewGroup
 import android.widget.Adapter
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.lectoya.R
+import com.example.lectoya.fragmentsDocenteAula.CerrarSesionDocente
 
 class perfilFragment : Fragment() {
 
@@ -28,39 +31,20 @@ class perfilFragment : Fragment() {
 
         val editTexts: List<EditText> = listOf(
             view.findViewById(R.id.etNombresEstudiante),
-            view.findViewById(R.id.etApellidos),
-            view.findViewById(R.id.etCorreoEstudiante)
+            view.findViewById(R.id.etApellidosEstudiante),
+            view.findViewById(R.id.etCorreoEstudiante),
+            view.findViewById(R.id.etTipoDeLector)
         )
 
         for (editText in editTexts) {
             editText.isFocusable = false
         }
 
+        val button: Button = view.findViewById(R.id.btnCerrarSesionAlumno)
 
-        val spinner: Spinner = view.findViewById(R.id.spTipoDeLector)
-
-        val items = listOf("Auditivo","Visual", "Kinestésico")
-
-        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
-        spinner.adapter = adapter
-
-        spinner.onItemSelectedListener = object :AdapterView.OnItemSelectedListener{
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                val selectedItem = items[position]
-                Toast.makeText(requireContext(), "$selectedItem", Toast.LENGTH_SHORT).show()
-            }
-
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-
-            }
+        button.setOnClickListener {
+            val showPopUp = CerrarSesionAlumno()
+            showPopUp.show((activity as AppCompatActivity).supportFragmentManager, "showPopUp")
         }
     }
-
 }

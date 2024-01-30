@@ -4,24 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="25dp"
-    android:paddingStart="30dp"
-    android:paddingEnd="30dp"
-    android:paddingBottom="120dp"
     tools:context=".fragmentsDocenteAula.perfilDocenteFragment">
-
-    <TextView
-        android:id="@+id/tvDatosPersonalesDocente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="20dp"
-        android:text="DATOS PERSONALES"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ivImagenUsuario"
@@ -29,9 +12,11 @@
         android:layout_height="160dp"
         android:background="@drawable/fotoperfil"
         android:paddingTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDatosPersonalesDocente" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
 
     <TextView
         android:id="@+id/tvNombresDocente"
@@ -118,14 +103,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tvCorreoDocente" />
 
     <Button
-        android:id="@+id/btnAceptarDocente"
+        android:id="@+id/btnCerrarSesionDocente"
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:text="Aceptar"
+        android:text="Cerrar Sesión"
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etCorreoDocente"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
