@@ -2,13 +2,12 @@ package com.example.lectoya.fragmentsAlumnoAula
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.DialogFragment
-import com.example.lectoya.Login
+import com.example.lectoya.IniciarSesion
 import com.example.lectoya.R
 
 class CerrarSesionAlumno : DialogFragment() {
@@ -29,7 +28,7 @@ class CerrarSesionAlumno : DialogFragment() {
 
 
         btn1.setOnClickListener {
-            val intent = Intent(requireActivity(), Login::class.java)
+            val intent = Intent(requireActivity(), IniciarSesion::class.java)
             startActivity(intent)
         }
 

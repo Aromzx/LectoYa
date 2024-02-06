@@ -6,17 +6,21 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 
-class Login : AppCompatActivity() {
+class IniciarSesion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_iniciar_sesion)
+
+        //Llevar al usuario al Activity de Registro
 
         val button = findViewById<Button>(R.id.btnCrearcuenta)
 
         button.setOnClickListener {
-            val intent = Intent(this, Register::class.java)
+            val intent = Intent(this, Registro::class.java)
             startActivity(intent)
         }
+
+        //Llevar al usuario al Activity de Iniciar Sesion
 
         val button2 = findViewById<Button>(R.id.btnIniciarSesion)
 
@@ -25,8 +29,8 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
+        //Si se ingresan los datos de del docente y se presiona el checkbox
+        //se le llevará a su apartado en especial.
 
         val cbDocente: CheckBox = findViewById(R.id.cbDocente)
         val btnIniciarSesion: Button = findViewById(R.id.btnIniciarSesion)
@@ -34,7 +38,7 @@ class Login : AppCompatActivity() {
 
         btnIniciarSesion.setOnClickListener {
             val intent: Intent = if (cbDocente.isChecked) {
-                Intent(this, DocenteAula::class.java)
+                Intent(this, AulasDocente::class.java)
             } else {
                 Intent(this, AlumnoAula::class.java)
             }

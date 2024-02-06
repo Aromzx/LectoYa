@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentsDocenteAula.aulasFragment">
-
+    tools:context=".AulasDocente">
 
     <Button
         android:id="@+id/btnAulas"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:text="Ingresar"
+        android:enabled="false"
         app:cornerRadius="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95"/>
+        app:layout_constraintVertical_bias="0.955" />
 
     <TextView
         android:id="@+id/tvListadodeaulas"
@@ -36,6 +37,7 @@
         />
 
     <RadioGroup
+        android:id="@+id/rgAulas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,38 +48,41 @@
         app:layout_constraintVertical_bias="0.2">
 
         <RadioButton
+            android:id="@+id/segundoa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2do A"
             android:paddingEnd="25dp"/>
 
         <RadioButton
+            android:id="@+id/segundob"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2do B"
             android:paddingEnd="25dp"/>
 
         <RadioButton
+            android:id="@+id/segundoc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2do C"
             android:paddingEnd="25dp"/>
 
         <RadioButton
+            android:id="@+id/segundod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2do D"
             android:paddingEnd="25dp"/>
 
         <RadioButton
+            android:id="@+id/segundoe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2do E"
             android:paddingEnd="25dp"/>
 
     </RadioGroup>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

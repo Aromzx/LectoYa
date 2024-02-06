@@ -5,11 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.lectoya.fragmentsAlumnoAula.minijuegosFragment;
-import com.example.lectoya.fragmentsAlumnoAula.perfilFragment;
+import com.example.lectoya.fragmentsAlumnoAula.minijuegosAlumnoFragment;
+import com.example.lectoya.fragmentsAlumnoAula.perfilAlumnoFragment;
 
-public class MyViewPagerAdapter extends FragmentStateAdapter {
-    public MyViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
+public class MyViewPagerAdapterAlumno extends FragmentStateAdapter {
+    public MyViewPagerAdapterAlumno(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }
     @NonNull
@@ -17,11 +17,11 @@ public class MyViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position){
             case 0:
-                return new minijuegosFragment();
+                return new minijuegosAlumnoFragment();
             case 1:
-                return new perfilFragment();
+                return new perfilAlumnoFragment();
             default:
-                return new minijuegosFragment();
+                return new minijuegosAlumnoFragment();
         }
     }
 

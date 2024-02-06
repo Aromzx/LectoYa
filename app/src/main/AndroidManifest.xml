@@ -13,16 +13,28 @@
         android:theme="@style/Theme.LectoYa"
         tools:targetApi="31">
         <activity
+            android:name=".AulasDocente"
+            android:exported="false" />
+        <activity
+            android:name=".aulasDocenteFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragmentsDocenteAula.alumnosDocenteFragment"
+            android:exported="false" />
+        <activity
+            android:name=".alumnosDocente"
+            android:exported="false" />
+        <activity
             android:name=".DocenteAula"
             android:exported="false" />
         <activity
             android:name=".AlumnoAula"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".Registro"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".IniciarSesion"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

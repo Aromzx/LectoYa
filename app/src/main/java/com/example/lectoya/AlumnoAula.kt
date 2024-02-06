@@ -2,10 +2,8 @@ package com.example.lectoya
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Spinner
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 
 
@@ -17,7 +15,8 @@ class AlumnoAula : AppCompatActivity() {
 
         val tabLayout = findViewById<TabLayout>(R.id.tlAlumno_aula)
         val viewPager2 = findViewById<ViewPager2>(R.id.vp1)
-        val myViewPagerAdapter = MyViewPagerAdapter(this)
+        val myViewPagerAdapter =
+            MyViewPagerAdapterAlumno(this)
         viewPager2.setAdapter(myViewPagerAdapter)
 
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
