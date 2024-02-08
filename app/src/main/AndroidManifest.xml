@@ -13,6 +13,12 @@
         android:theme="@style/Theme.LectoYa"
         tools:targetApi="31">
         <activity
+            android:name=".eliminarCuentaDocente"
+            android:exported="false" />
+        <activity
+            android:name=".recuperarContrasenia"
+            android:exported="false" />
+        <activity
             android:name=".AulasDocente"
             android:exported="false" />
         <activity

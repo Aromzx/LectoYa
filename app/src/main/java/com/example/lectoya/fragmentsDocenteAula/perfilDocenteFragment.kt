@@ -1,6 +1,8 @@
 package com.example.lectoya.fragmentsDocenteAula
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +10,10 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.example.lectoya.AlumnoAula
+import com.example.lectoya.IniciarSesion
 import com.example.lectoya.R
+import com.example.lectoya.eliminarCuentaDocente
 
 class perfilDocenteFragment : Fragment() {
 
@@ -40,5 +45,13 @@ class perfilDocenteFragment : Fragment() {
             val showPopUp = CerrarSesionDocente()
             showPopUp.show((activity as AppCompatActivity).supportFragmentManager, "showPopUp")
         }
+
+        val btneliminarcuenta: Button = view.findViewById(R.id.btnEliminarCuentaDocente)
+
+        btneliminarcuenta.setOnClickListener {
+            val intent = Intent(requireActivity(), eliminarCuentaDocente::class.java)
+            startActivity(intent)
+        }
+
     }
-}
+    }

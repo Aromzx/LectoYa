@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.TextView
 
 class IniciarSesion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,7 +55,13 @@ class IniciarSesion : AppCompatActivity() {
             startActivity(intent)
         }*/
 
+        val tvOlvidemicontraseña: TextView = findViewById(R.id.tvOlvidemicontraseña)
 
+        tvOlvidemicontraseña.setOnClickListener {
+            // Iniciar la actividad "RecuperarContraseña"
+            val intent = Intent(this, recuperarContrasenia::class.java)
+            startActivity(intent)
+        }
 
     }
 }
