@@ -6,7 +6,6 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.lectoya.fragmentsAlumnoAula.juegosAlumnoFragment;
-import com.example.lectoya.fragmentsAlumnoAula.minijuegosAlumnoFragment;
 import com.example.lectoya.fragmentsAlumnoAula.perfilAlumnoFragment;
 
 public class MyViewPagerAdapterAlumno extends FragmentStateAdapter {
