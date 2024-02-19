@@ -4,103 +4,179 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="1dp"
+    android:paddingEnd="1dp"
     tools:context=".fragmentsDocenteAula.perfilDocenteFragment">
 
     <ImageView
         android:id="@+id/ivImagenUsuario"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:background="@drawable/fotoperfil"
-        android:paddingTop="50dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/iconousuario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"/>
+        app:layout_constraintVertical_bias="0.05"/>
 
     <TextView
-        android:id="@+id/tvNombresDocente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="10dp"
-        android:text="NOMBRES: "
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:textStyle="bold"
+        android:text="Nombres:"
+        style="@style/textosnegros"
+        android:textSize="13dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivImagenUsuario" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
 
     <EditText
         android:id="@+id/etNombresDocente"
         android:layout_width="220dp"
         android:layout_height="45dp"
         android:background="@drawable/custom_input"
-        android:hint="Nombres del docente"
-        android:gravity="center"
+        android:hint="Nombres del estudiante"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNombresDocente" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
 
     <TextView
-        android:id="@+id/tvApellidosDocente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:text="APELLIDOS: "
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:textStyle="bold"
+        android:text="Apellido Paterno:"
+        style="@style/textosnegros"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNombresDocente" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
 
     <EditText
-        android:id="@+id/etApellidosDocente"
+        android:id="@+id/etApellidoPaternoDocente"
         android:layout_width="220dp"
         android:layout_height="45dp"
         android:background="@drawable/custom_input"
-        android:hint="Apellidos del docente"
-        android:gravity="center"
+        android:hint="Apellido paterno del estudiante"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvApellidosDocente" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
 
     <TextView
-        android:id="@+id/tvCorreoDocente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:text="CORREO: "
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:textStyle="bold"
+        android:text="Apellido Materno:"
+        style="@style/textosnegros"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etApellidosDocente" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <EditText
+        android:id="@+id/etApellidoMaternoDocente"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:hint="Apellido materno del estudiante"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        style="@style/textosnegros"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
 
     <EditText
         android:id="@+id/etCorreoDocente"
         android:layout_width="220dp"
         android:layout_height="45dp"
         android:background="@drawable/custom_input"
-        android:hint="Correo del docente"
-        android:gravity="center"
-        android:paddingStart="35dp"
+        android:hint="Correo del estudiante"
+        android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:textSize="16dp"
+        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCorreoDocente" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DNI:"
+        style="@style/textosnegros"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+
+    <EditText
+        android:id="@+id/etDocumentodeidentidadDocente"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:hint="Documento de identidad"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
 
     <Button
         android:id="@+id/btnEliminarCuentaDocente"

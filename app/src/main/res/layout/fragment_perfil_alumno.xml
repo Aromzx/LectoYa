@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="1dp"
+    android:paddingEnd="1dp"
     tools:context=".fragmentsAlumnoAula.perfilAlumnoFragment">
 
 
     <ImageView
         android:id="@+id/ivImagenUsuario"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:background="@drawable/fotoperfil"
-        app:layout_constraintVertical_bias="0.08"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/iconousuario"
+        app:layout_constraintVertical_bias="0.05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,15 +24,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombres:"
-        android:textColor="@color/black"
+        style="@style/textosnegros"
         android:textSize="13dp"
-        android:textStyle="bold"
-        app:layout_constraintVertical_bias="0.4"
-        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
 
     <EditText
         android:id="@+id/etNombresEstudiante"
@@ -40,62 +41,90 @@
         android:hint="Nombres del estudiante"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:textSize="14dp"
         android:textAlignment="center"
-        app:layout_constraintVertical_bias="0.4"
-        app:layout_constraintHorizontal_bias="0.8"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
-
+        app:layout_constraintVertical_bias="0.284" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Apellidos:"
-        android:textColor="@color/black"
+        android:text="Apellido Paterno:"
+        style="@style/textosnegros"
         android:textSize="13dp"
-        android:textStyle="bold"
-        app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
 
     <EditText
-        android:id="@+id/etApellidosEstudiante"
+        android:id="@+id/etApellidoPaternoEstudiante"
         android:layout_width="220dp"
         android:layout_height="45dp"
         android:background="@drawable/custom_input"
-        android:hint="Apellidos del estudiante"
+        android:hint="Apellido paterno del estudiante"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:textSize="14dp"
         android:textAlignment="center"
-        app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintHorizontal_bias="0.8"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.384" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Correo:"
-        android:textColor="@color/black"
+        android:text="Apellido Materno:"
+        style="@style/textosnegros"
         android:textSize="13dp"
-        android:textStyle="bold"
-        app:layout_constraintVertical_bias="0.6"
-        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <EditText
+        android:id="@+id/etApellidoMaternoEstudiante"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:hint="Apellido materno del estudiante"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        style="@style/textosnegros"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
 
     <EditText
         android:id="@+id/etCorreoEstudiante"
@@ -105,29 +134,65 @@
         android:hint="Correo del estudiante"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:textSize="14dp"
         android:textAlignment="center"
-        app:layout_constraintVertical_bias="0.6"
-        app:layout_constraintHorizontal_bias="0.8"
+        android:inputType="textEmailAddress"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.584" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DNI:"
+        style="@style/textosnegros"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+
+    <EditText
+        android:id="@+id/etDocumentodeidentidadAlumno"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:hint="Documento de identidad"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tipo de lector:"
-        android:textColor="@color/black"
+        style="@style/textosnegros"
         android:textSize="13dp"
-        android:textStyle="bold"
-        app:layout_constraintVertical_bias="0.7"
-        app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+
 
     <EditText
         android:id="@+id/etTipoDeLector"
@@ -137,24 +202,23 @@
         android:hint="Tipo de lector"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:textSize="14dp"
         android:textAlignment="center"
-        app:layout_constraintVertical_bias="0.7"
-        app:layout_constraintHorizontal_bias="0.8"
+        android:textSize="14dp"
+        android:textColorHint="@color/gris"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.80"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
-
+        app:layout_constraintVertical_bias="0.784" />
 
     <Button
         android:id="@+id/btnTipLectura"
         android:layout_width="280dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:text="Tip de Lectura"
         app:cornerRadius="29dp"
-        app:layout_constraintVertical_bias="0.87"
+        app:layout_constraintVertical_bias="0.90"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -164,7 +228,7 @@
     <Button
         android:id="@+id/btnCerrarSesionAlumno"
         android:layout_width="280dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:text="Cerrar Sesion"
         app:cornerRadius="29dp"
         app:layout_constraintVertical_bias="0.99"

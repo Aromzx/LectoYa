@@ -1,10 +1,14 @@
 package com.example.lectoya.fragmentsDocenteAula
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.InputFilter
+import android.text.TextWatcher
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.SearchView.OnQueryTextListener
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
@@ -77,9 +81,9 @@ class alumnosDocenteFragment : Fragment() {
     }
 
     private fun addDataToList(){
-        mList.add(alumnosDocenteData("Cristiano Ronaldo dos Santos Aveiro"))
-        mList.add(alumnosDocenteData("Vinícius José Paixão de Oliveira Júnior"))
-        mList.add(alumnosDocenteData("Kylian Mbappé Lottin"))
+        mList.add(alumnosDocenteData("Alumno 1"))
+        mList.add(alumnosDocenteData("Alumno 2"))
+        mList.add(alumnosDocenteData("Alumno 3"))
     }
 
 }

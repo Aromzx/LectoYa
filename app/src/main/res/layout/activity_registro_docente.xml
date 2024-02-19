@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingStart="30dp"
-    android:paddingEnd="30dp"
-    tools:context=".Registro">
-
+    android:paddingStart="30sp"
+    android:paddingEnd="30sp"
+    tools:context=".RegistroDocente">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -35,37 +34,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintHorizontal_bias="0.00"
                 app:layout_constraintVertical_bias="0.03" />
-
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.00"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.11">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingEnd="25dp"
-                    android:text="Visual" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingEnd="25dp"
-                    android:text="Auditivo" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingEnd="25dp"
-                    android:text="Kinestético" />
-
-            </RadioGroup>
 
             <TextView
                 android:id="@+id/tvNombres"
@@ -296,7 +264,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/btnRegistrarse"
+        android:id="@+id/btnRegistrarseDocente"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:text="Registrarse"

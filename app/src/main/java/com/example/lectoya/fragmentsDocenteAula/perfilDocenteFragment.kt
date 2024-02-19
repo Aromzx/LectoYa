@@ -31,8 +31,10 @@ class perfilDocenteFragment : Fragment() {
 
         val editTexts: List<EditText> = listOf(
             view.findViewById(R.id.etNombresDocente),
-            view.findViewById(R.id.etApellidosDocente),
-            view.findViewById(R.id.etCorreoDocente)
+            view.findViewById(R.id.etApellidoPaternoDocente),
+            view.findViewById(R.id.etApellidoMaternoDocente),
+            view.findViewById(R.id.etCorreoDocente),
+            view.findViewById(R.id.etDocumentodeidentidadDocente)
         )
 
         for (editText in editTexts) {

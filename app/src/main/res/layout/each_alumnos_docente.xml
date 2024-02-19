@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Alumno"
-                android:textColor="@color/black"
+                style="@style/textosnegros"
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:paddingTop="12dp"
@@ -41,18 +41,27 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
         <EditText
             android:id="@+id/etNota"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
             android:inputType="number"
             android:maxLength="5"
             android:text="00/20"
-            android:padding="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingStart="15dp"
+            app:layout_constraintVertical_bias="0.05"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+
+
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

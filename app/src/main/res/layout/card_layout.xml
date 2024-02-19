@@ -4,8 +4,8 @@
     android:layout_height="wrap_content"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cvJuegosAlumno"
-    android:layout_margin="12dp"
     card_view:cardBackgroundColor="#3d5b80"
+    android:layout_margin="12dp"
     card_view:cardCornerRadius="20dp"
     card_view:cardElevation="6dp"
     card_view:contentPadding="4dp">

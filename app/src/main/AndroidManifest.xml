@@ -13,6 +13,9 @@
         android:theme="@style/Theme.LectoYa"
         tools:targetApi="31">
         <activity
+            android:name=".RegistroDocente"
+            android:exported="false" />
+        <activity
             android:name=".eliminarCuentaDocente"
             android:exported="false" />
         <activity
@@ -22,13 +25,7 @@
             android:name=".AulasDocente"
             android:exported="false" />
         <activity
-            android:name=".aulasDocenteFragment"
-            android:exported="false" />
-        <activity
             android:name=".fragmentsDocenteAula.alumnosDocenteFragment"
-            android:exported="false" />
-        <activity
-            android:name=".alumnosDocente"
             android:exported="false" />
         <activity
             android:name=".DocenteAula"

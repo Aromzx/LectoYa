@@ -46,14 +46,14 @@ class IniciarSesion : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*btnCrearCuenta.setOnClickListener {
+        btnCrearCuenta.setOnClickListener {
             val intent: Intent = if (cbDocente.isChecked) {
-                Intent(this, DocenteRegistroActivity::class.java)
+                Intent(this, RegistroDocente::class.java)
             } else {
-                Intent(this, EstudianteRegistroActivity::class.java)
+                Intent(this, Registro::class.java)
             }
             startActivity(intent)
-        }*/
+        }
 
         val tvOlvidemicontraseña: TextView = findViewById(R.id.tvOlvidemicontraseña)
 
