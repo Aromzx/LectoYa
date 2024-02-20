@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentsDocenteAula.aniadirAlumnosConAulasFragment">
+
+    <TextView
+        style="@style/textosnegros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir alumnos"
+        android:textSize="29dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comparta cada enlace a su grupo de alumnos dependiendo el aula."
+        android:textSize="10dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+
+    <TextView
+        style="@style/textosnegros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2do A:"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <EditText
+        android:id="@+id/etAula2doA"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:paddingStart="10dp"
+        android:textColor="@color/gris"
+        android:textSize="13dp"
+        android:text="https://lectoya.page.link/aulaA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <Button
+        android:id="@+id/btnCopiarAulaA"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:text="Copiar"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2385"
+        app:layout_constraintHorizontal_bias="0.91"
+        />
+
+    <TextView
+        style="@style/textosnegros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2do B:"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <EditText
+        android:id="@+id/etAula2doB"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:paddingStart="10dp"
+        android:textColor="@color/gris"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <Button
+        android:id="@+id/btnCopiarAulaB"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:text="Copiar"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3685"
+        app:layout_constraintHorizontal_bias="0.91"
+        />
+
+
+    <TextView
+        style="@style/textosnegros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2do C:"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442" />
+
+    <EditText
+        android:id="@+id/etAula2doC"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:hint=""
+        android:paddingStart="10dp"
+        android:textColor="@color/gris"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <Button
+        android:id="@+id/btnCopiarAulaC"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:text="Copiar"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50"
+        app:layout_constraintHorizontal_bias="0.91"
+        />
+
+    <TextView
+        style="@style/textosnegros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2do D:"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.572" />
+
+    <EditText
+        android:id="@+id/etAula2doD"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:hint=""
+        android:paddingStart="10dp"
+        android:textColor="@color/gris"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <Button
+        android:id="@+id/btnCopiarAulaD"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:text="Copiar"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632"
+        app:layout_constraintHorizontal_bias="0.91"
+        />
+
+    <TextView
+        style="@style/textosnegros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2do E:"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+
+    <EditText
+        android:id="@+id/etAula2doE"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:hint=""
+        android:paddingStart="10dp"
+        android:textColor="@color/gris"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <Button
+        android:id="@+id/btnCopiarAulaE"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:text="Copiar"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773"
+        app:layout_constraintHorizontal_bias="0.91"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

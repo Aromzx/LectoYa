@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "590907980585",
+    "project_id": "fir-lectoya",
+    "storage_bucket": "fir-lectoya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590907980585:android:9ea76df30c6f3b98b15538",
+        "android_client_info": {
+          "package_name": "com.example.lectoya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPtj4qSC2I1K4iJGX9sej-u5O7SSQMm4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

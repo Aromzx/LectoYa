@@ -19,18 +19,17 @@ class perfilAlumnoFragment : Fragment() {
     private lateinit var btnTipLectura: Button
     private val tipsLectura = listOf(
         "Lee en un lugar tranquilo y con buena iluminación.",
-        "Toma descansos cada 20-30 minutos para evitar la fatiga visual.",
+        "Toma descansos para evitar la fatiga visual.",
         "Utiliza un marcador para resaltar las ideas importantes.",
         "Toma notas sobre lo que lees para mejorar la comprensión.",
         "Relaciona lo que lees con tus conocimientos y experiencias.",
-        "Discute lo que lees con otras personas para profundizar en el tema.",
         "Lee en diferentes formatos (libros, artículos, blogs, etc.).",
         "Explora diferentes géneros literarios.",
         "Dedica un tiempo específico a la lectura cada día.",
         "Convierte la lectura en un hábito placentero.",
         "Haz preguntas mientras lees para comprender mejor el texto.",
         "Lee sobre temas que te gusten.",
-        "Lee en voz alta para mejorar la concentración y la comprensión.",
+        "Lee en voz alta para mejorar la atención y comprensión.",
         "La lectura es un hábito que se desarrolla con el tiempo.",
         "Hay muchos recursos para mejorar tus habilidades."
     )
