@@ -1,5 +1,7 @@
 package com.example.lectoya.fragmentsDocenteAula
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.Editable
 import android.text.InputFilter
@@ -8,6 +10,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import android.widget.SearchView.OnQueryTextListener
 import android.widget.Toast
@@ -28,6 +31,10 @@ class alumnosDocenteFragment : Fragment() {
     private var mList = ArrayList<alumnosDocenteData>()
     private lateinit var adapter: alumnoDocenteAdapter
 
+    //Variables para el guardado de notas
+
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -38,6 +45,9 @@ class alumnosDocenteFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
+
 
         recyclerView = view.findViewById(R.id.recyclerView)
         searchView = view.findViewById(R.id.search_view)

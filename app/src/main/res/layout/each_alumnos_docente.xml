@@ -26,14 +26,14 @@
 
             <TextView
                 android:id="@+id/nombreAlumnos"
+                style="@style/textosnegros"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Alumno"
-                style="@style/textosnegros"
-                android:textSize="16dp"
-                android:textStyle="bold"
                 android:paddingTop="12dp"
                 android:paddingBottom="15dp"
+                android:text="Alumno"
+                android:textSize="16dp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -41,24 +41,297 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <TextView
+            android:id="@+id/tvNota1"
+            style="@style/textosnegros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota 1:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/etNota1"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.185" />
 
         <EditText
-            android:id="@+id/etNota"
-            android:layout_width="80dp"
+            android:id="@+id/etNota1"
+            android:layout_width="wrap_content"
             android:layout_height="45dp"
+            android:hint="0"
             android:inputType="number"
-            android:maxLength="5"
-            android:text="00/20"
-            android:paddingStart="15dp"
-            app:layout_constraintVertical_bias="0.05"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.02" />
+
+
+        <TextView
+            android:id="@+id/tvNota2"
+            style="@style/textosnegros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota 2:"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvNota3"
+            app:layout_constraintEnd_toStartOf="@+id/etNota2"
+            app:layout_constraintTop_toBottomOf="@+id/tvNota1" />
+
+        <EditText
+            android:id="@+id/etNota2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="2"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNota1"
+            app:layout_constraintVertical_bias="0.00" />
 
 
 
+        <TextView
+            android:id="@+id/tvNota3"
+            style="@style/textosnegros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota 3:"
+            app:layout_constraintTop_toBottomOf="@id/tvNota2"
+            app:layout_constraintEnd_toStartOf="@+id/etNota3"
+            app:layout_constraintBottom_toTopOf="@id/tvNota4"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etNota3"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNota2"
+            app:layout_constraintVertical_bias="0.00" />
+
+
+
+        <TextView
+            android:id="@+id/tvNota4"
+            style="@style/textosnegros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota 4:"
+            app:layout_constraintTop_toBottomOf="@id/tvNota3"
+            app:layout_constraintEnd_toStartOf="@+id/etNota4"
+            app:layout_constraintBottom_toTopOf="@id/tvNota5"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etNota4"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNota3"
+            app:layout_constraintVertical_bias="0.00" />
+
+
+
+        <TextView
+            android:id="@+id/tvNota5"
+            style="@style/textosnegros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota 5:"
+            app:layout_constraintTop_toBottomOf="@id/tvNota4"
+            app:layout_constraintEnd_toStartOf="@+id/etNota5"
+            app:layout_constraintBottom_toTopOf="@id/tvNota6"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etNota5"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNota4"
+            app:layout_constraintVertical_bias="0.00" />
+
+
+        <TextView
+            android:id="@+id/tvNota6"
+            style="@style/textosnegros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota 6:"
+            app:layout_constraintTop_toBottomOf="@id/tvNota5"
+            app:layout_constraintEnd_toStartOf="@+id/etNota6"
+            app:layout_constraintBottom_toTopOf="@id/tvNota7"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etNota6"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNota5"
+            app:layout_constraintVertical_bias="0.00" />
+
+
+
+        <TextView
+            android:id="@+id/tvNota7"
+            style="@style/textosnegros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota 7:"
+            app:layout_constraintTop_toBottomOf="@id/tvNota6"
+            app:layout_constraintEnd_toStartOf="@+id/etNota7"
+            app:layout_constraintBottom_toTopOf="@id/tvNota8"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etNota7"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNota6"
+            app:layout_constraintVertical_bias="0.00" />
+
+
+        <TextView
+            android:id="@+id/tvNota8"
+            style="@style/textosnegros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota 8:"
+            app:layout_constraintTop_toBottomOf="@id/tvNota7"
+            app:layout_constraintEnd_toStartOf="@+id/etNota8"
+            app:layout_constraintBottom_toTopOf="@id/tvNota9"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etNota8"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNota7"
+            app:layout_constraintVertical_bias="0.00" />
+
+
+
+        <TextView
+            android:id="@+id/tvNota9"
+            style="@style/textosnegros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota 9:"
+            app:layout_constraintTop_toBottomOf="@id/tvNota8"
+            app:layout_constraintEnd_toStartOf="@+id/etNota9"
+            app:layout_constraintBottom_toTopOf="@id/tvNota10"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etNota9"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNota8"
+            app:layout_constraintVertical_bias="0.00" />
+
+
+
+        <TextView
+            android:id="@+id/tvNota10"
+            style="@style/textosnegros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota 10:"
+            app:layout_constraintTop_toBottomOf="@id/tvNota9"
+            app:layout_constraintEnd_toStartOf="@+id/etNota10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.97" />
+
+        <EditText
+            android:id="@+id/etNota10"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNota9"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGuardar"
+            android:text="Guardar"
+            app:cornerRadius="7dp"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintVertical_bias="0.999"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
 
 

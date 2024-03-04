@@ -18,31 +18,34 @@ class juegosCustomAdapter: RecyclerView.Adapter<juegosCustomAdapter.ViewHolder>(
         "Cambio de destino",
         "Dibuja tu camino",
         "Captura el momento",
-        "Tutti Frutti",
+        "Tutti Frutti Literario",
         "Ordenalo Ya",
-        "Impro Ya!")
+        "Cambialo Ya!",
+        "Ruleteando")
 
-    val details = arrayOf("¿Cómo te gustaría que termine la historia?",
-        "Responde a una pregunta sobre la lectura",
-        "Escribe el significado de 3 palabras del parrafo",
-        "Distintas preguntas según el número del dado que salga",
-        "Cambia el final a lo leído y dibuja algo referente a ello",
-        "Responde a una pregunta sobre la lectura y dibújalo",
-        "Luego de haber leído la obra, captura una foto que aparezca en ella",
-        "2 imagenes, 2 preguntas",
-        "5 pequeñas oraciones, ordena de manera descendente según la obra leída",
-        "Te daremos una emoción, cambia el final y que esté relacionado a eso")
+    val details = arrayOf("Transforma historias y explora finales inesperados al controlar los destinos de los personajes.",
+        "Este juego te desafía a resolver dilemas narrativos guiando personajes hacia soluciones ingeniosas.",
+        "Desafía tu interpretación seleccionando tres palabras clave para desbloquear etapas y descubrir significados ocultos, mejorando tu habilidad de forma divertida.",
+        "Haz que la lectura sea interactiva: lanza dados, responde preguntas específicas y profundiza tu comprensión de manera única y entretenida.",
+        "Permite reescribir finales, donde tus elecciones determinan el destino de los personajes y transforman tramas en historias.",
+        "Demuestra creatividad y resolución en este juego al dibujar y escribir soluciones a desafíos emocionantes, creando un camino único hacia el éxito.",
+        "Tras leer una obra, captura una foto que refleje un elemento de la historia, explorando la creatividad visual y conectando con la narrativa.",
+        "Veamos cuanto sabes de la obra, compite con tus compañeros y completa las casillas lo más rápido posible. ",
+        "Organiza la historia en 5 pequeñas oraciones para que pueda recordar toda la obra. Acompáñalo con 5 imágenes propuestas.",
+        "Con las emociones propuestas crea el final como si fueras el personaje. ¡Adopta la emoción y cambia el destino!",
+        "Las preguntas más difíciles se encuentra en la ruleta de LECTO YA!. Es momento de probar tu suerte y que  respondas correctamente la pregunta.")
 
-    val images = intArrayOf(R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,)
+    val images = intArrayOf(R.drawable.historiasinteractivas,
+        R.drawable.ahoraqueharemos,
+        R.drawable.daleunsignificado,
+        R.drawable.dadodepreguntas,
+        R.drawable.cambiodedestino,
+        R.drawable.dibujatucamino,
+        R.drawable.capturaelmomento,
+        R.drawable.tuttifrutti,
+        R.drawable.ordenaloya,
+        R.drawable.improya,
+        R.drawable.ruleteando)
 
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
