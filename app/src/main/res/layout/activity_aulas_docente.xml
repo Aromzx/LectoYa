@@ -49,6 +49,7 @@
 
         <RadioButton
             android:id="@+id/segundoa"
+            style="@style/textosnegros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2do A"
@@ -56,6 +57,7 @@
 
         <RadioButton
             android:id="@+id/segundob"
+            style="@style/textosnegros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2do B"
@@ -63,6 +65,7 @@
 
         <RadioButton
             android:id="@+id/segundoc"
+            style="@style/textosnegros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2do C"
@@ -70,6 +73,7 @@
 
         <RadioButton
             android:id="@+id/segundod"
+            style="@style/textosnegros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2do D"
@@ -77,6 +81,7 @@
 
         <RadioButton
             android:id="@+id/segundoe"
+            style="@style/textosnegros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2do E"

@@ -11,27 +11,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabTextColor="#3d5b80"
-        app:tabIndicatorColor="#3d5b80">
+        app:tabIndicatorColor="#3d5b80"
+        android:background="@color/white">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alumnos" />
+            android:text="Alumnos"
+            android:background="@color/white"/>
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Añadir" />
+            android:text="Añadir"
+            android:background="@color/white"/>
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Juegos" />
+            android:text="Juegos"
+            android:background="@color/white"/>
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Perfil" />
+            android:text="Perfil"
+            android:background="@color/white"/>
 
     </com.google.android.material.tabs.TabLayout>
 
