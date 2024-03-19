@@ -20,8 +20,7 @@ class juegosCustomAdapter: RecyclerView.Adapter<juegosCustomAdapter.ViewHolder>(
         "Captura el momento",
         "Tutti Frutti Literario",
         "Ordenalo Ya",
-        "Cambialo Ya!",
-        "Ruleteando")
+        "Cambialo Ya!")
 
     val details = arrayOf("Transforma historias y explora finales inesperados al controlar los destinos de los personajes.",
         "Este juego te desafía a resolver dilemas narrativos guiando personajes hacia soluciones ingeniosas.",
@@ -32,8 +31,7 @@ class juegosCustomAdapter: RecyclerView.Adapter<juegosCustomAdapter.ViewHolder>(
         "Tras leer una obra, captura una foto que refleje un elemento de la historia, explorando la creatividad visual y conectando con la narrativa.",
         "Veamos cuanto sabes de la obra, compite con tus compañeros y completa las casillas lo más rápido posible. ",
         "Organiza la historia en 5 pequeñas oraciones para que pueda recordar toda la obra. Acompáñalo con 5 imágenes propuestas.",
-        "Con las emociones propuestas crea el final como si fueras el personaje. ¡Adopta la emoción y cambia el destino!",
-        "Las preguntas más difíciles se encuentra en la ruleta de LECTO YA!. Es momento de probar tu suerte y que  respondas correctamente la pregunta.")
+        "Con las emociones propuestas crea el final como si fueras el personaje. ¡Adopta la emoción y cambia el destino!")
 
     val images = intArrayOf(R.drawable.historiasinteractivas,
         R.drawable.ahoraqueharemos,
@@ -41,11 +39,10 @@ class juegosCustomAdapter: RecyclerView.Adapter<juegosCustomAdapter.ViewHolder>(
         R.drawable.dadodepreguntas,
         R.drawable.cambiodedestino,
         R.drawable.dibujatucamino,
-        R.drawable.capturaelmomento,
+        R.drawable.capturaelmomentojuego,
         R.drawable.tuttifrutti,
         R.drawable.ordenaloya,
-        R.drawable.improya,
-        R.drawable.ruleteando)
+        R.drawable.improya)
 
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {

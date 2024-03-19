@@ -91,16 +91,16 @@ class alumnosDocenteFragment : Fragment() {
     }
 
     private fun addDataToList(){
-        mList.add(alumnosDocenteData("Alumno 1"))
-        mList.add(alumnosDocenteData("Alumno 2"))
-        mList.add(alumnosDocenteData("Alumno 3"))
-        mList.add(alumnosDocenteData("Alumno 4"))
-        mList.add(alumnosDocenteData("Alumno 5"))
-        mList.add(alumnosDocenteData("Alumno 6"))
-        mList.add(alumnosDocenteData("Alumno 7"))
-        mList.add(alumnosDocenteData("Alumno 8"))
-        mList.add(alumnosDocenteData("Alumno 9"))
-        mList.add(alumnosDocenteData("Alumno 10"))
+        mList.add(alumnosDocenteData("Alumno 1 - "))
+        mList.add(alumnosDocenteData("Alumno 2 - "))
+        mList.add(alumnosDocenteData("Alumno 3 - "))
+        mList.add(alumnosDocenteData("Alumno 4 - "))
+        mList.add(alumnosDocenteData("Alumno 5 - "))
+        mList.add(alumnosDocenteData("Alumno 6 - "))
+        mList.add(alumnosDocenteData("Alumno 7 - "))
+        mList.add(alumnosDocenteData("Alumno 8 - "))
+        mList.add(alumnosDocenteData("Alumno 9 - "))
+        mList.add(alumnosDocenteData("Alumno 10 - "))
     }
 
 }

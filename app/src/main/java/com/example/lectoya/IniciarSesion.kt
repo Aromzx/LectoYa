@@ -18,7 +18,7 @@ class IniciarSesion : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_iniciar_sesion)
 
-        //Llevar al usuario al Activity de Registro
+        //Botón -> Registro Alumno
 
         val button = findViewById<Button>(R.id.btnCrearcuenta)
 
@@ -27,7 +27,7 @@ class IniciarSesion : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //Llevar al usuario al Activity de Iniciar Sesion
+        //Botón Iniciar Sesion -> LLeva al aula del alumno
 
         val button2 = findViewById<Button>(R.id.btnIniciarSesion)
 
@@ -36,17 +36,38 @@ class IniciarSesion : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //Si se ingresan los datos de del docente y se presiona el checkbox
-        //se le llevará a su apartado en especial.
+        //Text View -> Olvidé mi contraseña
+
+        val tvOlvidemicontraseña: TextView = findViewById(R.id.tvOlvidemicontraseña)
+
+        tvOlvidemicontraseña.setOnClickListener {
+            // Iniciar la actividad "RecuperarContraseña"
+            val intent = Intent(this, recuperarContrasenia::class.java)
+            startActivity(intent)
+        }
+
+        //Botón crear cuenta + CheckBox Docente -> Crear cuenta Docente
+
+        val btnCrearCuenta: Button = findViewById(R.id.btnCrearcuenta)
+        val cbDocente: CheckBox = findViewById(R.id.cbDocente)
+
+        btnCrearCuenta.setOnClickListener {
+            val intent: Intent = if (cbDocente.isChecked) {
+                Intent(this, RegistroDocente::class.java)
+            } else {
+                Intent(this, Registro::class.java)
+            }
+            startActivity(intent)
+        }
+
+        //Checkbox Docente -> LLeva al aula del docente
 
         /*Se declaran estas variables para ocuparlas luego
         val etCorreo: EditText = findViewById(R.id.etCorreo)
         val etContraseña: EditText = findViewById(R.id.etContraseña)
         */
 
-        val cbDocente: CheckBox = findViewById(R.id.cbDocente)
         val btnIniciarSesion: Button = findViewById(R.id.btnIniciarSesion)
-        val btnCrearCuenta: Button = findViewById(R.id.btnCrearcuenta)
 
         btnIniciarSesion.setOnClickListener {
 
@@ -74,23 +95,6 @@ class IniciarSesion : AppCompatActivity() {
             } else {
                 Intent(this, AlumnoAula::class.java)
             }
-            startActivity(intent)
-        }
-
-        btnCrearCuenta.setOnClickListener {
-            val intent: Intent = if (cbDocente.isChecked) {
-                Intent(this, RegistroDocente::class.java)
-            } else {
-                Intent(this, Registro::class.java)
-            }
-            startActivity(intent)
-        }
-
-        val tvOlvidemicontraseña: TextView = findViewById(R.id.tvOlvidemicontraseña)
-
-        tvOlvidemicontraseña.setOnClickListener {
-            // Iniciar la actividad "RecuperarContraseña"
-            val intent = Intent(this, recuperarContrasenia::class.java)
             startActivity(intent)
         }
 

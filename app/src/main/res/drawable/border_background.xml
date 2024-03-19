@@ -1,0 +1,10 @@
+<!-- Para el View de el juego Cambialo Ya -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#BD8DE8"/> <!-- Color del fondo -->
+    <stroke
+        android:width="2dp"
+        android:color="#BD8DE8" /> <!-- Color del borde -->
+    <corners
+        android:radius="20dp" /> <!-- Radio de las esquinas -->
+</shape>

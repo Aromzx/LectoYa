@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    tools:context=".historiasInteractivas">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historias Interactivas"
+        style="@style/textosnegros"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Después de descubrir la verdad detrás de la desaparición de los niños y enfrentarse al hombre misterioso, ¿cómo les gustaría que continuara la historia para Tomás, Sofía y Mateo?"
+        style="@style/textosnegros"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="145dp"
+        android:text="Deciden revelar la existencia del hombre misterioso a las autoridades y trabajar junto a la policía para desmantelar cualquier actividad sospechosa en Villa Esperanza."
+        app:cornerRadius="20dp"
+        android:backgroundTint="#96B6CB"
+        style="@style/textosnegros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="145dp"
+        android:text="Optan por mantener en secreto lo que han descubierto y forman un equipo de investigación privado para resolver otros misterios en el pueblo, convirtiéndose en héroes locales."
+        app:cornerRadius="20dp"
+        android:backgroundTint="#C39797"
+        style="@style/textosnegros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="145dp"
+        android:text="Se proponen ayudar a los niños desaparecidos a superar el hechizo, embarcándose en una búsqueda de conocimientos mágicos para deshacer la magia oscura que los afecta."
+        app:cornerRadius="20dp"
+        android:backgroundTint="#A1DEC6"
+        style="@style/textosnegros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
