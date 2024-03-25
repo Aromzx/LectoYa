@@ -47,8 +47,6 @@ class alumnosDocenteFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-
-
         recyclerView = view.findViewById(R.id.recyclerView)
         searchView = view.findViewById(R.id.search_view)
 

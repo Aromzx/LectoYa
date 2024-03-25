@@ -20,7 +20,10 @@
         android:theme="@style/Theme.LectoYa"
         tools:targetApi="31">
         <activity
-            android:name=".elDadoDeLasPreguntas"
+            android:name=".BORRAR"
+            android:exported="false" />
+        <activity
+            android:name=".dadoDeLasPreguntas"
             android:exported="false" />
         <activity
             android:name=".cambialoYa"

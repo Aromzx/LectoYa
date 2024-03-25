@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 
+/*Sirve para poblar toda la información en el recyclerview*/
 class juegosCustomAdapter: RecyclerView.Adapter<juegosCustomAdapter.ViewHolder>(){
 
     val tittles = arrayOf("Historias Interactivas",
