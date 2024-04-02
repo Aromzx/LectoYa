@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import com.example.lectoya.fragmentsDocenteAula.alumnosDocenteFragment;
 import com.example.lectoya.fragmentsDocenteAula.aniadirAlumnosConAulasFragment;
-import com.example.lectoya.fragmentsDocenteAula.juegosDocenteFragment;
+import com.example.lectoya.fragmentsDocenteAula.modulosDocenteFragment;
 import com.example.lectoya.fragmentsDocenteAula.perfilDocenteFragment;
 
 public class MyViewPagerAdapterDocente extends FragmentStateAdapter {
@@ -23,7 +23,7 @@ public class MyViewPagerAdapterDocente extends FragmentStateAdapter {
             case 1:
                 return new aniadirAlumnosConAulasFragment();
             case 2:
-                return new juegosDocenteFragment();
+                return new modulosDocenteFragment();
             case 3:
                 return new perfilDocenteFragment();
             default:

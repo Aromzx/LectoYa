@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
@@ -24,15 +25,6 @@ class IniciarSesion : AppCompatActivity() {
 
         button.setOnClickListener {
             val intent = Intent(this, Registro::class.java)
-            startActivity(intent)
-        }
-
-        //Botón Iniciar Sesion -> LLeva al aula del alumno
-
-        val button2 = findViewById<Button>(R.id.btnIniciarSesion)
-
-        button2.setOnClickListener {
-            val intent = Intent(this, AlumnoAula::class.java)
             startActivity(intent)
         }
 
@@ -74,8 +66,8 @@ class IniciarSesion : AppCompatActivity() {
             /*La url
             val url = "https://pokeapi.co/api/v2/pokemon/1"
             */
-
-            val intent: Intent = if (cbDocente.isChecked) {
+             val intent: Intent?
+             if (cbDocente.isChecked) {
 
                 /*
                 Log.d("asdfg", "error")
@@ -91,9 +83,18 @@ class IniciarSesion : AppCompatActivity() {
                 )
                 */
 
-                Intent(this, AulasDocente::class.java)
+                 intent = Intent(this, AulasDocente::class.java)
             } else {
-                Intent(this, AlumnoAula::class.java)
+                 intent = Intent(this, AlumnoAula::class.java)
+
+                /*val editTextCorreo = findViewById<EditText>(R.id.etCorreo)
+                val editTextContrasenia = findViewById<EditText>(R.id.etContraseña)
+
+                val textoCorreo = editTextCorreo.text.toString()
+                val textoContrasenia = editTextContrasenia.text.toString()
+
+                Toast.makeText(this, "El correo electrónico es: $textoCorreo", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "La contraseña es: $textoContrasenia", Toast.LENGTH_SHORT).show()*/
             }
             startActivity(intent)
         }

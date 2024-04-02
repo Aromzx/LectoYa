@@ -1,10 +1,12 @@
 package com.example.lectoya
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 
@@ -24,19 +26,18 @@ class dadoDeLasPreguntas : AppCompatActivity() {
         setContentView(R.layout.activity_dado_de_las_preguntas)
 
         val btnLanzar: Button = findViewById(R.id.btnLanzarDado)
-
-        btnLanzar.setOnClickListener {
-            rollDice()
+        btnLanzar.setOnClickListener{
+            tiempo()
         }
         rollDice()
     }
 
-    private fun rollDice() {
-        var indice: Int = lanzar(5)
+    private fun rollDice(){
+        var indice: Int = lanzar(6)
         val tvResultado: TextView = findViewById(R.id.tvResultado)
         tvResultado.text = textosDado[indice]
 
-        val drawableResource = when (indice) {
+        val drawableResource = when(indice){
             1 -> R.drawable.dado1
             2 -> R.drawable.dado2
             3 -> R.drawable.dado3
@@ -49,7 +50,22 @@ class dadoDeLasPreguntas : AppCompatActivity() {
         imgDado.setImageResource(drawableResource)
     }
 
-    private fun lanzar(max: Int): Int {
+    private fun lanzar(max: Int):Int{
         return (0 until max).random()
     }
+
+    private fun tiempo(){
+
+        object: CountDownTimer(2000,  150){
+            override fun onTick(millisUntilFinished: Long) {
+                rollDice()
+            }
+
+            override fun onFinish() {
+
+            }
+
+        }.start()
+    }
+
 }

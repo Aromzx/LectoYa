@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    tools:context=".test4opciones">
+
+    <TextView
+        android:id="@+id/tv4opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST 4 OPCIONES"
+        style="@style/textosnegros"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.00"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/tvPregunta4opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. (Pregunta)"
+        style="@style/textosnegros"
+        android:textSize="20dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv4opciones"
+        app:layout_constraintHorizontal_bias="0.00"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+    <RadioGroup
+        android:id="@+id/rg4opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPregunta4opciones"
+        app:layout_constraintVertical_bias="0.05">
+
+        <RadioButton
+            android:id="@+id/rbOpcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textosnegros"
+            android:text="Opcion 1" />
+
+        <RadioButton
+            android:id="@+id/rbOpcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textosnegros"
+            android:text="Opcion 2" />
+
+        <RadioButton
+            android:id="@+id/rbOpcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textosnegros"
+            android:text="Opcion 3" />
+
+        <RadioButton
+            android:id="@+id/rbOpcion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textosnegros"
+            android:text="Opcion 4" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

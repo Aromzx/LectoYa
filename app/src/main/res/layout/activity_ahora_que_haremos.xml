@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:text="En el pintoresco pueblo de Villa Esperanza, la tranquila cotidianidad se ve abruptamente interrumpida por la misteriosa desaparición de los niños. La intriga y el temor envuelven a la comunidad, sumergiéndola en un suspense creciente. Tomás, Sofía y Mateo, un grupo de valientes amigos, deciden enfrentarse al enigma y emprenden una investigación por cuenta propia. Su búsqueda los lleva a un colegio abandonado, donde descubren una puerta secreta que revela una escena desconcertante: los niños desaparecidos, en un estado extraño, y un hombre misterioso que parece tener respuestas. ¿Quién es este enigmático personaje y qué oscuros secretos guarda tras la puerta?"
         style="@style/textosnegros"
-        android:textSize="17dp"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.01"
