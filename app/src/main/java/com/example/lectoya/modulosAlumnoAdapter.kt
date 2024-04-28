@@ -13,10 +13,14 @@ class modulosAlumnoAdapter (private var mList: List<modulosAlumnoData>):
     RecyclerView.Adapter<modulosAlumnoAdapter.ModulosAlumnoViewHolder>(){
 
     inner class  ModulosAlumnoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val nombreModulo: TextView = itemView.findViewById(R.id.nombreModulo)
+        val nombreModulo: TextView = itemView.findViewById(R.id.tvNombreModulo)
         val constraintLayout2: ConstraintLayout = itemView.findViewById(R.id.constraintLayout2)
-        val btn1: Button = itemView.findViewById(R.id.btnLecturapdf)
-        val cardView: CardView = itemView.findViewById(R.id.cvJuegosAlumno)
+        val cardViewLectura: CardView = itemView.findViewById(R.id.cvLectura)
+        val constraintLayout3: ConstraintLayout = itemView.findViewById(R.id.constraintLayout3)
+        val nombreLectura: TextView = itemView.findViewById(R.id.tvLectura)
+        val nombreObra: TextView = itemView.findViewById(R.id.tvNombreObraEditar)
+        val autorObra: TextView = itemView.findViewById(R.id.tvAutorObraEditar)
+        val capituloObra: TextView = itemView.findViewById(R.id.tvCapituloObraEditar)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ModulosAlumnoViewHolder {
@@ -32,11 +36,15 @@ class modulosAlumnoAdapter (private var mList: List<modulosAlumnoData>):
         val modulosAlumnoData = mList[position]
 
         holder.nombreModulo.text = modulosAlumnoData.nombreModulo
+        holder.nombreLectura.text = modulosAlumnoData.nombreLectura
+        holder.nombreObra.text = modulosAlumnoData.nombreObraEditar
+        holder.autorObra.text = modulosAlumnoData.autorObraEditar
+        holder.capituloObra.text = modulosAlumnoData.capituloObraEditar
 
         val isExpandable: Boolean = modulosAlumnoData.isExpandable
 
-        holder.btn1.visibility = if (isExpandable) View.VISIBLE else View.GONE
-        holder.cardView.visibility = if (isExpandable) View.VISIBLE else View.GONE
+        // Establecer la visibilidad inicial del CardView de lectura
+        holder.cardViewLectura.visibility = if (isExpandable) View.VISIBLE else View.GONE
 
         holder.constraintLayout2.setOnClickListener{
             isAnyItemExpandable(position)

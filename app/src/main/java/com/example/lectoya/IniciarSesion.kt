@@ -65,8 +65,8 @@ class IniciarSesion : AppCompatActivity() {
 
             /*La url
             val url = "https://pokeapi.co/api/v2/pokemon/1"
-            */
-             val intent: Intent?
+
+             val intent: Intent?*/
              if (cbDocente.isChecked) {
 
                 /*

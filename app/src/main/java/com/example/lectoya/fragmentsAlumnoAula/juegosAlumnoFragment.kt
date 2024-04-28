@@ -40,18 +40,17 @@ class juegosAlumnoFragment : Fragment() {
         adapter = modulosAlumnoAdapter(mList)
         recyclerView2.adapter = adapter
 
-        /*Esto es lo que da el error, pero a la vez es importante para el recycler vire*/
+        /*Esto es lo que da el error, pero a la vez es importante para el recycler view*/
         /*val recyclerView = view.findViewById<RecyclerView>(R.id.rvJuegos)
         val adapter = juegosCustomAdapter()
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = adapter*/
     }
-
     private fun addDataToList(){
-        mList.add(modulosAlumnoData("Modulo 1"))
-        mList.add(modulosAlumnoData("Modulo 2"))
-        mList.add(modulosAlumnoData("Modulo 3"))
+        mList.add(modulosAlumnoData("Modulo 1", "Lectura", "Agua", "José María Arguedas", "1"))
+        mList.add(modulosAlumnoData("Modulo 2", "Lectura", "Agua", "José María Arguedas", "1"))
+        mList.add(modulosAlumnoData("Modulo 3", "Lectura", "Agua", "José María Arguedas", "1"))
 
     }
 }

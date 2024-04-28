@@ -169,6 +169,39 @@
                 app:layout_constraintVertical_bias="0.60" />
 
             <TextView
+                android:id="@+id/tvNumeroDocente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="Número Telefonico:"
+                style="@style/textosnegros"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.53" />
+
+            <EditText
+                android:id="@+id/etNumeroDocente"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_input"
+                android:hint="Ingrese su número de telefono"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gris"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.41"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.60" />
+
+            <TextView
                 android:id="@+id/tvDNI"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

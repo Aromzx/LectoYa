@@ -15,27 +15,25 @@ class alumnoDocenteAdapter(private var mList: List<alumnosDocenteData>): Recycle
 
         val nombreAlumnos: TextView = itemView.findViewById(R.id.nombreAlumnos)
         val constraintLayout: ConstraintLayout = itemView.findViewById(R.id.constraintLayout)
-        val etNota1: EditText = itemView.findViewById(R.id.etNota1)
-        val etNota2: EditText = itemView.findViewById(R.id.etNota2)
-        val etNota3: EditText = itemView.findViewById(R.id.etNota3)
-        val etNota4: EditText = itemView.findViewById(R.id.etNota4)
-        val etNota5: EditText = itemView.findViewById(R.id.etNota5)
-        val etNota6: EditText = itemView.findViewById(R.id.etNota6)
-        val etNota7: EditText = itemView.findViewById(R.id.etNota7)
-        val etNota8: EditText = itemView.findViewById(R.id.etNota8)
-        val etNota9: EditText = itemView.findViewById(R.id.etNota9)
-        val etNota10: EditText = itemView.findViewById(R.id.etNota10)
+        val etNota1: EditText = itemView.findViewById(R.id.etnt1)
+        val etNota2: EditText = itemView.findViewById(R.id.etnt2)
+        val etNota3: EditText = itemView.findViewById(R.id.etnt3)
+        val etNota4: EditText = itemView.findViewById(R.id.etnt4)
+        val etNota5: EditText = itemView.findViewById(R.id.etnt5)
+        val etNota6: EditText = itemView.findViewById(R.id.etnt6)
+        val etNota7: EditText = itemView.findViewById(R.id.etnt7)
+        val etNota8: EditText = itemView.findViewById(R.id.etnt8)
+        val etNota9: EditText = itemView.findViewById(R.id.etnt9)
 
-        val tvNota1: TextView = itemView.findViewById(R.id.tvNota1)
-        val tvNota2: TextView = itemView.findViewById(R.id.tvNota2)
-        val tvNota3: TextView = itemView.findViewById(R.id.tvNota3)
-        val tvNota4: TextView = itemView.findViewById(R.id.tvNota4)
-        val tvNota5: TextView = itemView.findViewById(R.id.tvNota5)
-        val tvNota6: TextView = itemView.findViewById(R.id.tvNota6)
-        val tvNota7: TextView = itemView.findViewById(R.id.tvNota7)
-        val tvNota8: TextView = itemView.findViewById(R.id.tvNota8)
-        val tvNota9: TextView = itemView.findViewById(R.id.tvNota9)
-        val tvNota10: TextView = itemView.findViewById(R.id.tvNota10)
+        val tvNota1: TextView = itemView.findViewById(R.id.tvnt1)
+        val tvNota2: TextView = itemView.findViewById(R.id.tvnt2)
+        val tvNota3: TextView = itemView.findViewById(R.id.tvnt3)
+        val tvNota4: TextView = itemView.findViewById(R.id.tvnt4)
+        val tvNota5: TextView = itemView.findViewById(R.id.tvnt5)
+        val tvNota6: TextView = itemView.findViewById(R.id.tvnt6)
+        val tvNota7: TextView = itemView.findViewById(R.id.tvnt7)
+        val tvNota8: TextView = itemView.findViewById(R.id.tvnt8)
+        val tvNota9: TextView = itemView.findViewById(R.id.tvnt9)
 
         val btnGuardar: Button = itemView.findViewById(R.id.btnGuardar)
 
@@ -49,7 +47,6 @@ class alumnoDocenteAdapter(private var mList: List<alumnosDocenteData>): Recycle
             etNota7.visibility = View.GONE
             etNota8.visibility = View.GONE
             etNota9.visibility = View.GONE
-            etNota10.visibility = View.GONE
 
             tvNota1.visibility = View.GONE
             tvNota2.visibility = View.GONE
@@ -60,7 +57,6 @@ class alumnoDocenteAdapter(private var mList: List<alumnosDocenteData>): Recycle
             tvNota7.visibility = View.GONE
             tvNota8.visibility = View.GONE
             tvNota9.visibility = View.GONE
-            tvNota10.visibility = View.GONE
 
             btnGuardar.visibility = View.GONE
         }
@@ -94,7 +90,6 @@ class alumnoDocenteAdapter(private var mList: List<alumnosDocenteData>): Recycle
         holder.etNota7.setText(alumnosDocenteData.notas.toString())
         holder.etNota8.setText(alumnosDocenteData.notas.toString())
         holder.etNota9.setText(alumnosDocenteData.notas.toString())
-        holder.etNota10.setText(alumnosDocenteData.notas.toString())
 
 
 
@@ -108,7 +103,6 @@ class alumnoDocenteAdapter(private var mList: List<alumnosDocenteData>): Recycle
         holder.etNota7.visibility = if (isExpandable) View.VISIBLE else View.GONE
         holder.etNota8.visibility = if (isExpandable) View.VISIBLE else View.GONE
         holder.etNota9.visibility = if (isExpandable) View.VISIBLE else View.GONE
-        holder.etNota10.visibility = if (isExpandable) View.VISIBLE else View.GONE
 
         holder.tvNota1.visibility = if (isExpandable) View.VISIBLE else View.GONE
         holder.tvNota2.visibility = if (isExpandable) View.VISIBLE else View.GONE
@@ -119,7 +113,6 @@ class alumnoDocenteAdapter(private var mList: List<alumnosDocenteData>): Recycle
         holder.tvNota7.visibility = if (isExpandable) View.VISIBLE else View.GONE
         holder.tvNota8.visibility = if (isExpandable) View.VISIBLE else View.GONE
         holder.tvNota9.visibility = if (isExpandable) View.VISIBLE else View.GONE
-        holder.tvNota10.visibility = if (isExpandable) View.VISIBLE else View.GONE
 
         holder.btnGuardar.visibility = if (isExpandable) View.VISIBLE else View.GONE
 

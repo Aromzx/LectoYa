@@ -24,7 +24,7 @@ import com.example.lectoya.juegosCustomAdapter
 import java.util.Locale
 import kotlin.io.path.fileVisitor
 
-class alumnosDocenteFragment : Fragment() {
+    class alumnosDocenteFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var searchView: SearchView
@@ -89,16 +89,16 @@ class alumnosDocenteFragment : Fragment() {
     }
 
     private fun addDataToList(){
-        mList.add(alumnosDocenteData("Alumno 1 - "))
-        mList.add(alumnosDocenteData("Alumno 2 - "))
-        mList.add(alumnosDocenteData("Alumno 3 - "))
-        mList.add(alumnosDocenteData("Alumno 4 - "))
-        mList.add(alumnosDocenteData("Alumno 5 - "))
-        mList.add(alumnosDocenteData("Alumno 6 - "))
-        mList.add(alumnosDocenteData("Alumno 7 - "))
-        mList.add(alumnosDocenteData("Alumno 8 - "))
-        mList.add(alumnosDocenteData("Alumno 9 - "))
-        mList.add(alumnosDocenteData("Alumno 10 - "))
+        mList.add(alumnosDocenteData("Alumno 1 - Tipo de Lector"))
+        mList.add(alumnosDocenteData("Alumno 2 - Tipo de Lector"))
+        mList.add(alumnosDocenteData("Alumno 3 - Tipo de Lector"))
+        mList.add(alumnosDocenteData("Alumno 4 - Tipo de Lector"))
+        mList.add(alumnosDocenteData("Alumno 5 - Tipo de Lector"))
+        mList.add(alumnosDocenteData("Alumno 6 - Tipo de Lector"))
+        mList.add(alumnosDocenteData("Alumno 7 - Tipo de Lector"))
+        mList.add(alumnosDocenteData("Alumno 8 - Tipo de Lector"))
+        mList.add(alumnosDocenteData("Alumno 9 - Tipo de Lector"))
+        mList.add(alumnosDocenteData("Alumno 10 - Tipo de Lector"))
     }
 
 }

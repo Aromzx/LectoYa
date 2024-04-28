@@ -19,14 +19,65 @@
         android:theme="@style/Theme.LectoYa"
         tools:targetApi="31">
         <activity
+            android:name=".seleccionarJuegosDocente"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".editarCambialoYa"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".editar4opciones"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EditarVerdaderoOFalso"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".editarTuttiFruttiLiterario"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".editarCapturaElMomento"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".editarDadoDeLasPreguntas"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".editarDaleUnSignificado"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".editarAhoraQueHaremos"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".editarHistoriasInteractivas"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".editarModulo"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".crearModulosDocente"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".test4opciones"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".testVerdaderoFalso"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".mostrarJuegos"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".dadoDeLasPreguntas"
             android:exported="false"
@@ -41,14 +92,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".capturaElMomento"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".dibujaTuCamino"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".cambioDeDestino"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
@@ -77,10 +120,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".AulasDocente"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".fragmentsDocenteAula.alumnosDocenteFragment"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
